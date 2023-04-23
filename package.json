@@ -1,0 +1,17 @@
+{
+  "name": "@neonfish/settings",
+  "version": "0.1.0",
+  "description": "Simple library to save and load settings to/from home",
+  "author": "Neon Fish",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "",
+    "build": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.13",
+    "typescript": "^5.0.4"
+  }
+}
