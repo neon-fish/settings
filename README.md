@@ -48,7 +48,7 @@ settings.values.userName = "Brian";
 
 // Updated values can be saved using:
 await settings.save();
-// Note: is saving is throttled, this promise will resolve immediately. The actual save
+// Note: if saving is throttled, this promise will resolve immediately. The actual save
 // will be performed later, up to `timeout` milliseconds (default 100ms)
 
 // Settings can be loaded from file using:
@@ -87,16 +87,16 @@ console.log(config.values);
 
 ```typescript
 // Initial values are loaded from an existing file synchronously, if one is found.
-// If no file is found, the initial values are saved, with the directory structure
-// created recursively.
+// If no file is found, the initial values are saved to create the file,
+// with the directory structure being created recursively.
 const settings = new Settings<T>({
   /**
    * Initial settings values. This object is dereferenced, so the settings cannot be
-   * accidentally modified by editing this object later
+   * accidentally modified by editing this object later.
    */
   initial: T,
   /**
-   * The path to the settings file within the user's home
+   * The path to the settings file within the user's home.
    * For example: `.neonfish` results in the path: `~/.neonfish/`
    */
   path: string,
