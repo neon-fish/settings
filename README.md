@@ -13,6 +13,8 @@ The settings values are typed, based on the type of the initial values. A type p
 $ npm i @neonfish/settings
 ```
 
+Typescript type definitions are included.
+
 # Examples
 
 ## Simple example
