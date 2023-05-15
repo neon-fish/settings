@@ -1,6 +1,6 @@
 {
   "name": "@neonfish/settings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple library to save and load settings to/from the user's home directory.",
   "author": "Neon Fish",
   "license": "MIT",
